@@ -1,0 +1,30 @@
+
+Integrantes:
+
+João Pedro Cunha Guska - 2264994
+
+Martín Ávila Buitrón - 2274183
+
+Arquivos:
+main.c
+Grafo.c
+Grafo.h
+FilaEstatica.c
+FilaEstatica.h
+FilaDinamica.c
+FilaDinamica.h
+
+Detalhes:
+Primeiramente o programa pega uma matriz de tipo char contendo o mapa. 
+Depois se cria uma matriz de posições de tipo inteiro.
+Com a matriz de posições se cria um vetor que armazena cada um das terras do mapa. 
+Em seguida se armazena o índice do VetorHash num Grafo de Lista Adjacencia de tamanho igual ao
+tamanho do VetorHash.
+Para armazenar cada um dos índices é comparado a posição com o elemento que esteja a sua esquerda, direita, acima ou 
+abaixo. E caso seja um #, se adiciona uma aresta, sendo L e X considerados terras também. 
+Se criam duas funções para fazer as buscas de BFS e de DFS. 
+Posteriormente a partir da função BFS, há uma função para contar as ilhas e obter a ilhar maior e menor do mapa. 
+O elemento mais importante do trabalho é o vetor de pais que armazena os elementos ligados e acaba por ser importante para
+imprimir o caminho.
+E por fim é liberada a memória das filas, nodos, Grafo e vetores dinâmicos. 
+
